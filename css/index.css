@@ -52,9 +52,9 @@ html::-webkit-scrollbar{width:0px}
         }
     }
     /*大于960*/
-    @media screen and (min-width:779px){
+    @media screen and (min-width:960px){
         .head{
-            height: 140px;
+            height: 200px;
         }
     }
 }
