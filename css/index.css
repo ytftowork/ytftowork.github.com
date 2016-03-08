@@ -25,46 +25,56 @@ html::-webkit-scrollbar{width:0px}
 }
 /*头部logo*/
 .head{
-    width: 100%;
-    height: 27.2%;
+    /*width: 100%;*/
+    height: 28.2%;
+    background-color: #e4b9b9;
 }
-/*竖屏*/
-@media all and (orientation : portrait){
-    .head{
-        height: 28%;
-    }
-}
-/*横屏*/
-@media all and (orientation : landscape) {
-    .head{
-        height: 80px;
-    }
-    /*大于599*/
-    @media screen and (min-width:599px){
-        .head{
-            height: 100px;
-        }
-    }
-    /*大于779*/
-    @media screen and (min-width:779px){
-        .head{
-            height: 140px;
-        }
-    }
-    /*大于960*/
-    @media screen and (min-width:960px){
-        .head{
-            height: 200px;
-        }
-    }
-}
-
 /*中间内容区*/
 .content{
     width: 100%;
     height: 66.8%;
     overflow: auto;
 }
+/*footer部分*/
+.footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    background-color: #ffffff;
+}
+/*竖屏*/
+@media all and (orientation : portrait){
+    /*.head{*/
+    /*height: 28%;*/
+    /*}*/
+}
+/*横屏*/
+@media all and (orientation : landscape) {
+    /*大于568*/
+    @media screen and (min-width:567px){
+        .head{
+            background-color: #D5EBCE;
+            width: 80%;
+            height: 32%;
+        }
+        .content{
+            width: 80%;
+            height: 60%;
+        }
+        .footer{
+            position:fixed;
+            bottom:0;
+            width: 100%;
+            height: 8%;
+            text-align: center;
+            background-color: #ffffff;
+        }
+    }
+}
+
+
 .content-detail{
     margin-top: 15px;
     text-align: center;
@@ -81,15 +91,7 @@ html::-webkit-scrollbar{width:0px}
     text-align: center;
 }
 
-/*footer部分*/
-.footer{
-    position:fixed;
-    bottom:0;
-    width: 100%;
-    /*height: 5%;*/
-    text-align: center;
-    background-color: #ffffff;
-}
+
 .footer h6{
     width: 100%;
     font-size: small;
@@ -98,6 +100,6 @@ html::-webkit-scrollbar{width:0px}
 /*大于779*/
 @media screen and (min-width:779px){
     .footer h6{
-    font-size: medium;
+        font-size: medium;
     }
 }
