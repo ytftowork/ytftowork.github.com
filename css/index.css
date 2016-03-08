@@ -95,3 +95,9 @@ html::-webkit-scrollbar{width:0px}
     font-size: 6px;
     text-align: center;
 }
+/*大于779*/
+@media screen and (min-width:779px){
+    .footer h6{
+    font-size: medium;
+    }
+}
