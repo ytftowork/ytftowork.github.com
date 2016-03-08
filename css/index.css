@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/*隐藏滚动条*/
+html{
+    overflow-x: hidden;
+    overflow-y: auto;
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+}
+html::-webkit-scrollbar{width:0px}
+/*隐藏滚动条结束*/
+
+.container{
+    margin-top: 0px;
+    padding: 0px;
+}
+/*头部logo*/
+.head{
+    width: 100%;
+    height: 27.2%;
+}
+/*竖屏*/
+@media all and (orientation : portrait){
+    .head{
+        height: 28%;
+    }
+}
+/*横屏*/
+@media all and (orientation : landscape) {
+    .head{
+        height: 80px;
+    }
+    /*大于599*/
+    @media screen and (min-width:599px){
+        .head{
+            height: 100px;
+        }
+    }
+    /*大于779*/
+    @media screen and (min-width:779px){
+        .head{
+            height: 140px;
+        }
+    }
+    /*大于960*/
+    @media screen and (min-width:779px){
+        .head{
+            height: 140px;
+        }
+    }
+}
+
+/*中间内容区*/
+.content{
+    width: 100%;
+    height: 66.8%;
+    overflow: auto;
+}
+.content-detail{
+    margin-top: 15px;
+    text-align: center;
+    float: left;
+    width: 25%;
+    /*height: 96px;*/
+}
+.content-detail img{
+    /*width: 80%;*/
+    /*height: 90%;*/
+}
+.content-detail h6{
+    width: 100%;
+    text-align: center;
+}
+
+/*footer部分*/
+.footer{
+    position:fixed;
+    bottom:0;
+    width: 100%;
+    /*height: 5%;*/
+    text-align: center;
+    background-color: #ffffff;
+}
+.footer h6{
+    width: 100%;
+    font-size: 6px;
+    text-align: center;
+}
