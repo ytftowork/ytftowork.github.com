@@ -2,13 +2,13 @@
  * Created by 24192 on 2016/3/8.
  */
 $(document).ready(function(){
-    console.log("value="+window.name);
+    $('#myModal').modal('hide');//隐藏模态框
     iconBackClick();
     setInterval(headContentToCenter, 10);//调整头部水平居中
     var headerText=window.name;
     loadHeaderText(headerText);
     loadNotice();//加载信息片段
-    scrollLoad();
+    scrollLoad();//notice.js中，滑动加载判断
     jumpToDetail(headerText);
 });
 

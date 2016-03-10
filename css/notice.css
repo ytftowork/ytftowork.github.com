@@ -16,12 +16,16 @@ html,body{
 }
 .header{
     width: 100%;
-    height: 40px;
+    height: 45px;
     background-color: #007F32;
     text-align: center;
 }
 .icon-back{
-    margin-top: 6px;
+    width: 20px;
+    height: 31px;
+    margin-top: 7px;
+    margin-left: 2px;
+    background-image: url("../images/arr.png");
 }
 .icon-back:hover,.icon-back:visited{
     cursor: pointer;
@@ -32,13 +36,13 @@ html,body{
 
 .header h4{
     color: #F9F9FA;
-    font-family: Î¢ÈíÑÅºÚ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Microsoft YaHei",Î¢ÈíÑÅºÚ,"MicrosoftJhengHei",»ªÎÄÏ¸ºÚ,"YouYuan",sans-serif;
 }
 
 /*ÄÚÈÝÇøÓò*/
 .content{
     width: 100%;
-    height: 50px;
+    height: 56px;
     margin-top: 10px;
     border-bottom: 1px solid #E7E7E7;
 }
@@ -51,12 +55,16 @@ html,body{
     margin-left: 5%;
     text-align: left;
     vertical-align: middle;
-    font-family: Î¢ÈíÑÅºÚ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 
+}
+.content-h h4{
+    font-size: 16px;
+    font-family: Î¢ÈíÑÅºÚ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .content-p{
     width: 90%;
     height: 15px;
+    margin-top: 5px;
     margin-left: 5%;
     /*text-align: left;*/
 }
